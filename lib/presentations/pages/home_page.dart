@@ -13,33 +13,36 @@ class HomePage extends StatelessWidget {
         const Text("REVENUE"),
 
         // pie chart
-        PieChart(
-          swapAnimationDuration: const Duration(milliseconds: 750),
-          swapAnimationCurve: Curves.easeInOutQuint,
-          PieChartData(sections: [
-            // item 1
-            PieChartSectionData(
-              value: 200,
-              color: Colors.blueAccent,
-            ),
-            // item 2
-            PieChartSectionData(
-              value: 20,
-              color: Colors.redAccent,
-            ),
+        Padding(
+          padding: const EdgeInsets.all(20),
+          child: PieChart(
+            swapAnimationDuration: const Duration(milliseconds: 750),
+            swapAnimationCurve: Curves.easeInOutQuint,
+            PieChartData(sections: [
+              // item 1
+              PieChartSectionData(
+                value: 200,
+                color: Colors.blueAccent,
+              ),
+              // item 2
+              PieChartSectionData(
+                value: 20,
+                color: Colors.redAccent,
+              ),
 
-            // item 3
-            PieChartSectionData(
-              value: 20,
-              color: Colors.greenAccent,
-            ),
+              // item 3
+              PieChartSectionData(
+                value: 20,
+                color: Colors.greenAccent,
+              ),
 
-            // item 4
-            PieChartSectionData(
-              value: 20,
-              color: Colors.yellowAccent,
-            ),
-          ]),
+              // item 4
+              PieChartSectionData(
+                value: 20,
+                color: Colors.yellowAccent,
+              ),
+            ]),
+          ),
         )
       ],
     );
